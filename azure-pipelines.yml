@@ -3,8 +3,8 @@
 # Add steps that test, sign, and distribute the APK, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
 
-pool:
-  vmImage: 'macOS-latest'
+pool: Default
+Agent: 'Local Windows'
 
 steps:
 - task: Gradle@2
